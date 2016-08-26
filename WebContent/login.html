@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <link href="css/login.css" rel='stylesheet' type='text/css' />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script language="javascript" src="js/jquery-1.3.2.js"></script>
+ <script type="application/x-javascript">
+ addEventListener("load", function() 
+ { 
+ setTimeout(hideURLbar, 0); 
+ }, false);
+ function hideURLbar(){ window.scrollTo(0,1); } 
+ function submitFunction(content){
+	 try{
+		 if(content.val()=='提交'){
+			 if($('#confirmPassword').val()!=$('#password').val()){
+				 event.preventDefault();
+				 $('#confirmPassword').siblings('div').text('您两次输入的密码不一致');
+			 }
+			 if(nameBlur($('#account'))&&passwordBlur($('#password'))&&confirmpasswordBlur($('#confirmPassword'))){
+			 }else{
+				 event.preventDefault();
+			 }
+		 }else{
+			 if(loginNameBlur($('#loginName'))&&loginPasswordBlur($('#loginPassword'))){
+			 }else{
+				 event.preventDefault();
+			 }
+		 }
+	 }catch(e){
+		 alert(e);
+	 }
+ }
+ </script>
+ </head>
+ <body>
+	<div class="main">
+	<div class="header" >
+			<h1>登录注册</h1>
+		</div>
+	<p>您可以在这里注册新的账号，如果您已经有账号可以直接登录</p>
+	<form method="post" action="/HelloWorld/regist">
+	<script language="javascript">
+	function nameBlur(content){
+		var value=content.val();
+		if(new RegExp(/^[\d]{11}$/).test(value)){
+			content.siblings('a').css("background-position","0px 0px");
+			content.siblings('div').text('');
+			return true;
+		}
+		else{
+			content.siblings('a').css("background-position"," -31px 0px");
+			content.siblings('div').text('请使用手机号注册！');
+			return false;
+		}
+	}
+	function passwordBlur(content){
+		var value=content.val();
+		if(new RegExp(/^[\da-zA-Z]{6,12}$/).test(value)){
+			content.siblings('a').css("background-position","0px 0px");
+			content.siblings('div').text('');
+			return true;
+		}else{
+			content.siblings('a').css("background-position"," -31px 0px");
+			content.siblings('div').text('请使用字母数字，长度在6-12之间！');
+			return false;
+		}
+	}
+	function confirmpasswordBlur(content){
+		var value=content.val();
+		if(value!=$('#password').val()){
+			content.siblings('您两次输入的密码不一致');
+			return false;
+		}else{
+			content.siblings('');
+			return true;
+		}
+	}
+	</script>
+			<ul class="left-form">
+			<h2>注册新用户：</h2>
+			<li>
+					<input type="text" name="username" onBlur="nameBlur($(this));" id="account" placeholder="Username" required/>
+					<a href="#" class="icon ticker"> </a>
+					<div class="clear"> </div>
+				</li>
+			<li>
+					<input type="password"  name='password' id="password" onBlur="passwordBlur($(this));"  placeholder="password" required/>
+					<a href="#" class="icon into"> </a>
+					<div class="clear"> </div>
+				</li>
+			<li>
+					<input type="password" name='confirmpassword' id="confirmPassword" onBlur="confirmpasswordBlur($(this));"   placeholder="Confirmpassword" required/>
+					<a href="#" class="icon into"> </a>
+					<div class="clear"> </div>
+				</li>
+			<input type="submit" onClick="submitFunction($(this));" value="提交">
+			<div class="clear"> </div>
+		</ul>
+		</form>
+	<form method="post" action="/HelloWorld/login">
+			<ul class="right-form">
+			<h3>登录：</h3>
+			<div>
+			<script language="javascript">
+			function loginNameBlur(content){
+				var value=content.val();
+				if(new RegExp(/^[\d]{11}$/).test(value)){
+					content.siblings('div').text('');
+					return true;
+				}else{
+					content.siblings('div').text('请使用手机号注册！');
+					return false;
+				}
+			}
+			function loginPasswordBlur(content){
+				var value=content.val();
+				if(new RegExp(/^[\da-zA-Z]{6,12}$/).test(value)){
+					content.siblings('div').text('');
+					return true;
+				}else{
+					content.siblings('div').text('密码格式应为数字字母组成的长度为6-12的字符串！');
+					return false;
+				}
+			}
+			</script>
+					<li>
+					<input type="text" name="username" onBlur="loginNameBlur($(this));"  id="loginName" placeholder="Username" required/>
+					<div class="clear"> </div>
+				</li>
+					<li>
+					<input type="password" name="password" onBlur="loginPasswordBlur($(this));"  id="loginPassword" placeholder="Password" required/>
+					<div class="clear"> </div>
+				</li>
+					<li>
+					<input type="submit"  onClick="submitFunction($(this))"; value="登录" style="float:left; position:relative; margin-left:10px;" />
+				</li>
+				</div>
+		</ul>
+		</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于我们</title>
+<style type="text/css">
+body {
+	background-color: #CCC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	line-height:23px;
+}
+a.nav:link {
+	font-family: "楷体";
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFF;
+}
+a.nav:active {
+	font-size: 20px;
+	color: #FF0;
+}
+a.nav:visited {
+	color: #FFF;
+	font-size: 25px;
+}
+a:hover {
+	cursor: pointer;
+}
+h3 {
+	text-align: left;
+	position: relative;
+	font-family: "微软雅黑", "宋体", "黑体";
+	font-weight: bold;
+	background-color:#00F;
+	padding:10px;
+	width:auto;
+	color:#FFF;
+}
+p {
+	line-height:23px;
+	position: relative;
+	margin-top: 5px;
+	text-indent: 2em;
+}
+div.detail img {
+	width: 400px;
+	margin-left: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+li a img{
+	width: 343px;
+	height:250px;
+	text-align: left;
+}
+ol#imageList{
+	position: relative;
+	list-style: none;
+	float: left;
+	width: 2401px;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+	margin-top: 30px;
+	left: 0px;
+}
+ol#imageList li{
+	float:left;
+	position:relative;
+	margin:0px;
+	padding:0px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	function anim(){
+		$('#imageList').animate({left:'-343px'},1000,function(){
+			$('#imageList').append($('#imageList').children().eq(0));
+			$('#imageList').css('left','0px');
+		});
+	}
+	anim();
+	var timer=window.setInterval(anim,3000);
+	$('#imageList').hover(function(){
+		window.clearInterval(timer);
+	},function(){
+		anim();
+		timer=window.setInterval(anim,3000);
+	});
+});
+</script>
+<link type="text/css" rel="stylesheet" href="css/upfile.css" />
+</head>
+
+<body>
+<section style="margin: auto; position: relative; text-align: left; width: 1098px; font-weight: bold; color: #FFF; ">
+	<table width="1098" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="98" colspan="4"><img src="images/home/top.jpg" width="100%" height="100%" alt="主页" /></td>
+		</tr>
+		<tr>
+			<td width="100" height="42" align="center" valign="middle" bgcolor="#000099" style="text-align: center;  border-right:#666 solid 2px;"><a href="index.html" class="nav">主页</a></td>
+			<td width="100" align="center" valign="middle" bgcolor="#000099" style="text-align: center;border-right:#666 solid 2px;"><a href="print.html" class="nav">享印</a></td>
+			<td width="100" align="center" valign="middle" bgcolor="#000099" style="text-align: center;border-right:#666 solid 2px;background-color:rgba(0,51,153,0.8);"><a href="aboutus.html" class="nav" >关于我们</a></td>
+			<td width="498" align="center" valign="middle" bgcolor="#000099">&nbsp;</td>
+		</tr>
+	</table>
+	<section style="background-color:#FFF; color:#000; padding:50px; padding-top:20px;border:#909 2px dashed; border-radius:10px;">
+		<h3>背景简介：</h3>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="70%">
+					<p style="margin-right:10px; padding:5px; border:#9F0 2px dashed; border-radius:5px; background-color:rgba(255,255,153,1)">目前，随着中国社会信息化的深入和个人、家庭及公司打印需求的增长，打印机市场的需求持续着稳定增长。由于资源有限，很多时候给用户带来了极大的不便：用户每次打印都到打印店排队，浪费大量时间，效率低下；在打印店打印时U盘容易感染病毒；用户急需打印文件，打印店较远而邻居家有打印机，但连接USB接口，安装驱动给用户带来麻烦等。同时，我们正在经历一个全新的商业时代，如今的消费者正在放弃传统的、效率低下的企业，转而投入分享型企业的怀抱，来获取他们想要的产品和服务，例如汽车分享企业Uber、房屋分享企业Airbnb等，他们以自己现有的资源进行共享，用户可以使用自己需要的资源，分享人可以获得利益，达到双赢的目的，同样，以打印机作为共享的资源，实现“分享型经济”模式，也成为大形势下的重要商机。即用户可以选择附近的打印机，在线支付，一定时间后去取文件，大大节省了等待时间。 针对目前的市场形势，本项目考虑将个人或者企业闲置的打印机分享出来，通过智能硬件与打印机的USB接口连接，实现了无需安装打印驱动和无线远程打印的功能。再使用QQlink方式对硬件进行设置，用户使用Web页面进行打印机的查找和共享、文件的上传和打印，通过这样的形式实现资源、经济分享，将会带来显著的经济和社会效益。 </p>
+				</td>
+				<td width="*" align="left" valign="top" style="margin:0px; padding:0px;">
+					<div style="float:left; position:relative; width:300px; height:300px; overflow:hidden;">
+						<ol id="imageList">
+							<li><a href="index.html"><img src="images/aboutus/img0.png"/></a></li>
+							<li><a href="index.html"><img src="images/aboutus/img2.png"/></a></li>
+							<li><a href="index.html"><img src="images/aboutus/img3.png"/></a></li>
+							<li><a href="index.html"><img src="images/aboutus/img4.png"/></a></li>
+							<li><a href="index.html"><img src="images/aboutus/img5.png"/></a></li>
+							<li><a href="index.html"><img src="images/aboutus/img6.png"/></a></li>
+							<li><a href="index.html"><img src="images/aboutus/img7.png"/></a></li>
+						</ol>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<h3>主要技术：</h3>
+		<ul>
+			<li>在智能硬件上实现打印机的万能驱动</li>
+			<li>打印文件格式的转化</li>
+			<li>利用QQlink技术对智能硬件进行空中配网</li>
+			<li>调用地图，实现共享打印机的标注和查找</li>
+		</ul>
+		<h3>用户使用流程:</h3>
+		<ul>
+			<li> 用户拿到我们的智能打印设备后，直接与打印机的USB接口连接，插上电源线，设备就开始工作。如图a所示。 设备的设置可以很方便的通过手机QQ进行。使用手机QQ扫描硬件设备上的二维码，就可以与设备进行连接绑定，如图b所示。 绑定完成后，可以进行设备的初始设置，如图c所示。设置内容包括智能硬件的WiFi联网设置。打印机名称、位置设置、连接密码设置等。 设备安装设置完成后，用户可以在Web页面很方便的使用打印服务，如图d所示。使用时，首先通过地图定位或者搜索打印机名称找到附近的打印机。 </li>
+			<div style="margin-left:100px; margin-top:20px; margin-bottom:20px;"><img src="images/aboutus/img1.png" /></div>
+			<li> 主页会显示所有的可用打印机，用户也可以根据自己的情况搜索满意的打印机。地图左上角是测距工具： </li>
+			<div class="detail"><img src="images/aboutus/img7.png" style="margin-left:30px;" /><img src="images/aboutus/img0.png"/ style="margin-left:30px;"></div>
+			<li>在搜索结果框中选择相应的打印机，点击详情可以查看打印价格等详细信息，点击“去打印”即可进入打印设置界面，如图所示： </li>
+			<div class="detail"><img src="images/aboutus/img2.png"/></div>
+			<li> 点击确定之后即可上传要打印的文档,病设置打印要求，上传完成之后，确认订单信息然后使用支付宝支付。最后点击确定之后即可上传文件完成打印（左下角还有分享功能哦）: </li>
+			<div class="detail"><img src="images/aboutus/img3.png" style="margin-left:30px;"/><img style="margin-left:30px;"  src="images/aboutus/img4.png" /></div>
+			<li> 显示成功之后，点击“确定”按钮之后，您就可以去领取您的打印资料了(^_^)!!! </li>
+			<div class="detail"><img src="images/aboutus/img5.png" style="margin-left:30px;" /><img style="margin-left:30px;" src="images/aboutus/img6.png" /></div>
+		</ul>
+	</section>
+	<script type="text/javascript">
+	window._bd_share_config = {
+		"common" : {
+			"bdSnsKey" : {},
+			"bdText" : "",
+			"bdMini" : "2",
+			"bdPic" : "",
+			"bdStyle" : "0",
+			"bdSize" : "16"
+		},
+		"share" : {},
+		"image" : {
+			"viewList" : [ "qzone", "tsina", "tqq", "renren", "weixin" ],
+			"viewText" : "分享到：",
+			"viewSize" : "16"
+		},
+		"selectShare" : {
+			"bdContainerClass" : null,
+			"bdSelectMiniList" : [ "qzone", "tsina", "tqq", "renren", "weixin" ]
+		}
+	};
+	with (document)
+		0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='
+				+ ~(-new Date() / 36e5)];
+	</script>
+	<div class="bdsharebuttonbox"> <a href="#" class="bds_more" data-cmd="more"></a> <a href="#" class="bds_qzone" data-cmd="qzone"></a> <a href="#" class="bds_tsina" data-cmd="tsina"></a> <a href="#" class="bds_tqq" data-cmd="tqq"></a> <a href="#" class="bds_renren" data-cmd="renren"></a> <a href="#" class="bds_weixin" data-cmd="weixin"></a> </div>
+	<!--<div style=" text-align:center; vertical-align:middle; width:100%; height:50px; padding-top:15px; background-color:#00F; font-size:16px"> 地址：浙江杭州电子科技大学第一教学楼HelloWorld办公室  邮编：310018   电话：18405813906<br/>
+		Copyright <font style=" font-family:Arial, Helvetica, sans-serif; font-size:12px">&copy; &nbsp;</font>2010 杭州电子科技大学HelloWorld社团版权所有 All rights reserved.</div>-->
+	</div>
+</section>
+</body>
+</html>

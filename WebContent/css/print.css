@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+span#noChoice {
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-left: -180px;
+	margin-top: 100px;
+	width: 300px;
+	text-align: center;
+	padding: 10px;
+	background-color: #00F;
+}
+span#noChoice:hover {
+	color: #F00;
+	font-weight: bold;
+	cursor: pointer;
+}
+span#confirmPrinter {
+	font-family: "微软雅黑", "宋体", "黑体";
+	letter-spacing: 2px;
+	float: right;
+	position: relative;
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	background-color: #00F;
+	margin-right: 180px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+span#confirmPrinter:hover {
+	color:#F00;
+}
+span#addDocument {
+	float: left;
+	position: relative;
+	font-family: "微软雅黑", "宋体", "黑体";
+	border:#00C 5px solid;
+	padding: 15px 40px 15px 40px;
+	display: block;
+	background-color:#0F0;
+	left:30%;
+	margin-left:50px;
+	margin-top:30px;
+	cursor:pointer;
+	margin-bottom:50px;
+	color:#F00;
+}
+span#addDocument:hover{
+	color:#FFF;
+	border-color:#FF0;
+}
+span#confirmUpload {
+	float: left;
+	position: relative;
+	font-family: "微软雅黑", "宋体", "黑体";
+	border:#00C 5px solid;
+	padding: 15px 40px 15px 40px;
+	display: block;
+	background-color:#0F0;
+	left:30%;
+	margin-left:50px;
+	margin-top:30px;
+	cursor:pointer;
+	color:#F00;
+}
+span#confirmUpload:hover{
+	color:#FFF;
+	border-color:#FF0;
+}
+img.fileImg {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.fileParam{
+	width:60px;
+	float:left;
+	margin-top:10px;
+	font-size:14px;
+	text-align:center;
+}
+ul#fileList li{
+	background-color:#FFF;
+	height:100px;
+	width:95%;
+	border:#FF0 dashed 2px;
+	color:#000;
+	margin-top:10px;
+}
+ul#orderList li{
+	background-color:#FFF;
+	height:100px;
+	width:85%;
+	padding-top:15px;
+	padding-left:10px;
+	border:#FF0 solid 2px;
+	border-radius:10px;
+	color:#000;
+	margin-top:10px;
+	background-color:#99F;
+}
+ul#orderList li b{
+	margin-top:20px;
+	margin-left:20px;
+	font-family:"微软雅黑", "宋体", "黑体";
+	font-size:20px;
+	font-weight:bold;
+	color:#FFF;
+}
+#confirmOrder{
+	padding:10px;
+	border:#F00 2px solid;
+	border-radius:5px;
+	float:right;
+	margin-right:150px;
+	background-color:#963;
+	margin-bottom:50px;
+}
+#confirmOrder:hover{
+	cursor:pointer;
+	background-color:#9F6;
+	border-color:#FF0;
+}

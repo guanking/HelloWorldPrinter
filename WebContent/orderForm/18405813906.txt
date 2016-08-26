@@ -1,0 +1,2 @@
+PrintInfo [fileName=2013-2014下半学期勤工助学.xlsx, size=51027, type=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, printNumber=1, colorful=true, doubleFace=false]
+PrintInfo [fileName=杭电勤工助学申请表.doc, size=60928, type=application/msword, printNumber=5, colorful=false, doubleFace=true]

@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+div#top {
+	position: relative;
+	background-color:#FFF;
+	width: 700px;
+	height: 400px;
+	overflow: auto;
+}
+div#top1 {
+	width: 100%;
+	height: 100px;
+}
+div#sub1 {
+	position: relative;
+	float: left;
+	width: 45%;
+	height: 120px;
+}
+span#supportStyle {
+	position: relative;
+	float: left;
+	display: inline;
+	font-size: 10px;
+	color: #000;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+span.item {
+	display: inline;
+	position: relative;
+	float: left;
+	padding: 1px 5px 1px 5px;
+	margin: 5px;
+	border: #009 1px solid;
+}
+span#addDocument {
+	float: left;
+	position: relative;
+	font-family: "微软雅黑", "宋体", "黑体";
+	border: #069 5px solid;
+	padding: 15px 40px 15px 40px;
+	display: block;
+	color: #039;
+	margin: 10px 40px 10px 60px;
+	cursor:pointer;
+}
+div#sub2 {
+	position: relative;
+	float: left;
+	width: 54%;
+	height: 120px;
+}
+span.message {
+	position: relative;
+	font-size: 15px;
+	font-family: "微软雅黑", "宋体", "黑体";
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+span#printList {
+	position: relative;
+	border-left: #666 5px solid;
+	padding-left: 20px;
+	width: 100px;
+	margin-left: 20px;
+	font-family: "微软雅黑", "宋体", "黑体";
+	font-size: 18px;
+	margin-top: 10px;
+}
+span#calculate {
+	position: relative;
+	border-left: #666 5px solid;
+	padding-left: 20px;
+	width: 100px;
+	margin-left: 5px;
+	font-family: "微软雅黑", "宋体", "黑体";
+	font-size: 18px;
+	margin-top: 15px;
+	float: left;
+}
+div#top2 {
+	width: 100%;
+	float: left;
+	position: relative;
+	overflow: auto;
+}
+div.fileLIst {
+	float: left;
+	position: relativel;
+	width: 650px;
+	height: 100px;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border: #999 3px solid;
+}
+span.labelInFile{
+	float: left;
+	width: 60px;
+	text-align: center;
+	font-family: "微软雅黑", "宋体", "黑体";
+}
+.fileParam{
+	width:60px;
+	float:left;
+	margin-top:10px;
+	font-size:14px;
+	text-align:center;
+}
+img.fileImg {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+div#top3 {
+	display:block;
+	float: left;
+	position: relative;
+	width: 630px;
+	height: 100px;
+	margin-left: 25px;
+	border-bottom: #999 2px solid;
+	border-top: #999 2px solid;
+	margin-top: 10px;
+}
+span#confirmSubmit {
+	display: block;
+	position: relative;
+	float: right;
+	border: #00F 2px solid;
+	padding: 5px 10px 5px 10px;
+	font-family: "微软雅黑", "宋体", "黑体";
+	color: #009;
+	margin-top: 30px;
+	margin-right: 10px;
+	cursor:pointer;
+}
+div#confirmDiv{
+	float: right;
+	position: relative;
+	width: 100px;
+	height: 50px;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+input#confirmPassword{
+	float: left;
+	position: relative;
+	width: 95%;
+	height: 20px;
+	margin-top: 5px;
+	border: #999 1px solid;
+}
+span#money{
+	float: right;
+	position: relative;
+	font-family: "微软雅黑", "宋体", "黑体";
+	font-size: 20px;
+	color: #0F6;
+	margin-right: 15px;
+	margin-top: 30px;
+}
